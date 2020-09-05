@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".common.activities.enquiry.FillDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_backprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_arrow_back"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--region progress bar-->
+            <LinearLayout
+                android:id="@+id/lyt_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/spacing_medium"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_progress_employees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_large"
+                    android:text="Please Wait..."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ProgressBar
+                    android:id="@+id/progress_login"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+
+            </LinearLayout>
+            <!--endregion-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Title"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#243343"
+                    android:hint="@string/Title"
+                    android:textSize="@dimen/textSizeForm"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#b6b5b5"
+                    android:textCursorDrawable="@drawable/cursor_background" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Internal_diameter"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_Internal_diameter"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#243343"
+                    android:hint="@string/Internal_diameter"
+                    android:textSize="@dimen/textSizeForm"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#b6b5b5"
+                    android:textCursorDrawable="@drawable/cursor_background" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Number_of_terms"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_Number_of_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#243343"
+                    android:hint="@string/Number_of_terms"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textSizeForm"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/HintColor"
+                    android:textCursorDrawable="@drawable/cursor_background" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Wire_diameter"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_Wire_diameter"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#243343"
+                    android:hint="@string/Wire_diameter"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#b6b5b5"
+                    android:textSize="@dimen/textSizeForm"
+                    android:maxLength="10"
+                    android:textCursorDrawable="@drawable/cursor_background" />
+
+                <!--Email-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Start_wait_time"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_Start_wait_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#243343"
+                    android:hint="@string/Start_wait_time"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textSizeForm"
+                    android:textColorHint="@color/HintColor"
+                    android:textCursorDrawable="@drawable/cursor_background" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/Stop_wait_time"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_Stop_wait_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#243343"
+                    android:hint="@string/Stop_wait_time"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textSizeForm"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/HintColor"
+                    android:textCursorDrawable="@drawable/cursor_background" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Feed_speed"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_Feed_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#243343"
+                    android:hint="@string/Feed_speed"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#b6b5b5"
+                    android:textSize="@dimen/textSizeForm"
+                    android:textCursorDrawable="@drawable/cursor_background" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Die_Diameter"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/et_Die_Diameter"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#243343"
+                    android:hint="@string/Die_Diameter"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#b6b5b5"
+                    android:textSize="@dimen/textSizeForm"
+                    android:textCursorDrawable="@drawable/cursor_background" />
+
+                <LinearLayout
+                    android:id="@+id/row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/grey_5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/btn_Cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_5"
+                        android:background="@drawable/button"
+                        android:text="@string/Cancel"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_Select_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_5"
+                        android:background="@drawable/button"
+                        android:text="@string/Select_setting"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_New_Save_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Save_setting"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/button"
+                        android:layout_margin="@dimen/padding_5"
+                        android:textSize="@dimen/padding_10"/>
+
+
+                    <Button
+                        android:id="@+id/btn_Send"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Send"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/button"
+                        android:layout_margin="@dimen/padding_5"
+                        android:textSize="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".common.activities.enquiry.FillDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_backprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_arrow_back"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!--region Toolbar Start-->
+    <RelativeLayout
+        android:id="@+id/newtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginLeft="-8dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/cv_slider"
+        android:layout_margin="@dimen/padding_20"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/replaceToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+
+            <EditText
+                android:id="@+id/toolbarEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="35dp"
+                android:hint="Typehere"
+                android:textColorHint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:textColor="@color/colorTextWhite" />
+                <!-- android:focusable="false"
+                 android:editable="false"-->
+            <View
+                android:id="@+id/viewReplaceClear"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_clear"
+                android:backgroundTint="@color/colorWhite"/>
+
+            <View
+                android:id="@+id/viewSearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_search"
+                android:backgroundTint="@color/colorTextWhite"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/neworiginalToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+
+            <EditText
+                android:id="@+id/newtxtTitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/viewMenuIconBack"
+                android:text="Type name..."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/toolbarText"
+                android:visibility="gone"/>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--endregion-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="@dimen/padding_10"
+        android:id="@+id/recycler_view_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/padding_10"
+        android:layout_below="@id/rl_slider"/>
+
+</LinearLayout>

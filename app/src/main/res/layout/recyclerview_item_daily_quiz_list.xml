@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_button1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_10"
+    android:background="@color/colorShade3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10"
+        android:background="@color/colorShade3">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorShade3"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:id="@+id/img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/img_quiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/testnew"
+                    android:padding="@dimen/padding_20"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_quiz_title"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:background="@color/backgroundBlack"
+                android:padding="3dp"
+                android:text="QUANTITATIVE"
+                android:textColor="@color/colorlivetext"
+                android:textSize="7sp"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/img"
+                android:padding="5dp"
+                android:text="Sample title"
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_getquiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginLeft="@dimen/padding_10">
+
+                <TextView
+                    android:id="@+id/txt_total_que"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_title"
+                    android:padding="2dp"
+                    android:text="15 Ques  "
+                    android:textColor="@color/colorText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_toRightOf="@+id/txt_total_que"
+                    android:padding="2dp"
+                    android:text="7 Mins"
+                    android:textColor="@color/colorText"
+                    android:textSize="12sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/txt_getquiz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/download_arrow"
+                        android:text="GET QUIZ  "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/txt_showquiz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:text="ATTEMPT"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/txt_resume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:text="Resume"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:text="Result"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_getquiz"
+                android:layout_toRightOf="@+id/img"
+                android:id="@+id/layout_marking"
+                android:layout_marginLeft="@dimen/padding_10">
+
+                <TextView
+                    android:id="@+id/txt_negative_marking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="-1"
+                    android:textColor="@color/colorText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_positive_marking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_negative_marking"
+                    android:padding="2dp"
+                    android:text="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_marking"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginLeft="@dimen/padding_10">
+
+                <TextView
+                    android:id="@+id/txt_min_marks_topass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="-1"
+                    android:textColor="@color/colorText"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_quiz"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+</LinearLayout>

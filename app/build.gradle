@@ -1,0 +1,156 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+//sarvodaya
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.teammandroid.sarvodaya"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src/main/assets', 'src/main/assets/'
+            }
+        }
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    def buildVersion = "28.0.0"
+    def lifecycle_version = "2.1.0"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+
+    //noinspection GradleCompatible
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+
+    // androidTestImplementation 'com.android.support.mDemoSlidertest.espresso:espresso-core:3.0.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.mediarouter:mediarouter:1.0.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    //implementation 'com.github.takusemba:multisnaprecyclerview:1.3.3'
+    implementation 'com.android.support:multidex:1.0.0'
+
+    //networking Library
+    implementation 'com.amitshekhar.android:android-networking:1.0.1'
+
+    //Sqlite Library
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+
+    //Sliding Images
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+
+    //Validation
+    implementation 'com.basgeekball:awesome-validation:2.0'
+
+    //circle image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.github.khizar1556.MKVideoPlayer:mkvideoplayer:0.1.5'
+    implementation 'com.applandeo:material-calendar-view:1.7.0'
+
+    //Snackbar
+    implementation 'io.github.tonnyl:light:1.1.1'
+
+    //vimeo
+    implementation 'com.vimeo.networking:vimeo-networking:1.1.3'
+    implementation 'com.github.ed-george:AndroidVimeoExtractor:1.2.1'
+    implementation 'com.ct7ct7ct7.androidvimeoplayer:library:1.2.2'
+
+    //Timeline
+    implementation 'com.github.vipulasri:timelineview:1.1.2'
+    implementation 'com.zekapp.library:progreswheelview:1.1.5'
+
+    //PieCharts
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //LifeCycle
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    // For Kotlin use kapt instead of annotationProcessor
+
+    //Authentication
+    implementation 'com.shuhart.stepview:stepview:1.2.8'
+    implementation 'com.chaos.view:pinview:1.3.2'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+
+    //searchable spinner
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+    //file selector
+    implementation 'com.github.jaiselrahman:FilePicker:1.3.2'
+
+    // image compression library
+    implementation 'id.zelory:compressor:2.1.0'
+
+    //piechart
+    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+
+    //razorPay
+    implementation 'com.razorpay:checkout:1.5.13'
+    implementation 'com.razorpay:razorpay-java:1.3.8'
+
+    implementation 'com.karumi:dexter:4.2.0'
+
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    implementation 'com.skype.android.skype-android-sdk:MobileSdk:1.0.0.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.0'
+
+    /*implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+*/
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    //implementation 'com.google.firebase:firebase-core:16.0.4'
+
+}

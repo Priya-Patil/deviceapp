@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".common.activities.attendance.AttendanceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_view"
+        android:layout_marginBottom="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--region Toolbar Start-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="-8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="top">
+
+            <RelativeLayout
+                android:id="@+id/replaceToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <EditText
+                    android:id="@+id/toolbarEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="35dp"
+                    android:hint="Type"
+                    android:backgroundTint="@color/colorAccent"
+                    android:textColor="@color/colorTextWhite" />
+
+
+                <View
+                    android:id="@+id/viewReplaceClear"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_clear" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/originalToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/viewMenuIconBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/ic_arrow_back"
+                    android:backgroundTint="@color/colorTextWhite"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtTitleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/viewMenuIconBack"
+                    android:text="Attendance"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/toolbarText" />
+
+                <View
+                    android:id="@+id/viewSearch"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_search"
+                    android:backgroundTint="@color/colorTextWhite"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <!--endregion-->
+
+            <TextView
+                android:id="@+id/txt_className"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/selectclass"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/padding_10" />
+
+            <Spinner
+                android:id="@+id/sp_className"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:spinnerMode="dialog"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Date"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_Date"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#243343"
+                android:hint="Choose Date"
+                android:inputType="textPersonName"
+                android:textColor="@color/color_blue"
+                android:textColorHint="#b6b5b5"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/textSizeForm"
+                android:textCursorDrawable="@drawable/cursor_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                android:layout_marginTop="@dimen/padding_5">
+
+                <!--region Period-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Roll No"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/padding_14"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0.60dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlack"
+                    tools:ignore="Suspicious0dp">
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="name"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/padding_14"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"/>
+
+
+                <LinearLayout
+                    android:layout_width="0.60dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlack"
+                    tools:ignore="Suspicious0dp">
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="mark"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/padding_14"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"/>
+
+                <LinearLayout
+                    android:layout_width="0.60dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlack"
+                    tools:ignore="Suspicious0dp"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+
+                <!--endregion Period-->
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_parentlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/sp_className"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:paddingRight="10dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_marginTop="-50dp"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scroll_view"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

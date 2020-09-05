@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/activity_background"
+    tools:context=".common.activities.general.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/colorPrimary">
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="128dp"
+                android:layout_height="127dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/male_avatar" />
+
+                <ImageView
+                    android:id="@+id/iv_pedit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="95dp"
+                    android:src="@drawable/pencil" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/selectclass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:text="@string/selectclass"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/sp_className"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:spinnerMode="dialog"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/selectclass"
+                    android:visibility="gone"/>
+
+
+                <!--Fullname-->
+                <TextView
+                    android:id="@+id/tv_classname"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="text"
+                    android:hint="Class Name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="10dp"
+                    android:inputType="text"
+                    android:hint="@string/username"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+                <!--End-->
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/mobile"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/contact"
+                    android:maxLength="10"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/email"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:inputType="textEmailAddress"/>
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/location"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/tv_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/writer"
+                    android:drawableTint="@color/color_red"
+                    android:drawablePadding="10dp"
+                    android:text="No Available"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:visibility="gone"/>
+
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button_background"
+                    android:text="Submit"
+                    android:textColor="@color/BackWhite"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="@dimen/padding_20"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

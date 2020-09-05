@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/grey_5"
+    >
+
+    <RelativeLayout
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/txtTitleBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Setup"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textExtraLargeSize"
+            android:fontFamily="@font/montserrat"
+            />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:layout_below="@+id/Toolbar">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:includeFontPadding="false"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:text="User-Management"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textLargeSize"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_student"
+                >
+                <!-- ROW 1  -->
+                <!-- COLUMN 1  -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_student"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/homepagemenu"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="@dimen/padding_3"
+                    android:layout_marginBottom="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_20">
+
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:includeFontPadding="false"
+                            android:padding="5dp"
+                            android:text="@string/Student"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/textLargeSize"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/montserrat"/>
+
+                        <ImageView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_right_arrow"
+                            android:padding="@dimen/padding_20"
+
+                            />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_staff"
+                >
+                <!-- ROW 1  -->
+                <!-- COLUMN 1  -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_staff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/homepagemenu"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="@dimen/padding_3">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_20">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/Staff"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/textLargeSize"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/montserrat"
+                            />
+
+
+                        <ImageView
+
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+
+                            android:background="@drawable/ic_right_arrow" />
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_non_teachingstaff"
+                >
+                <!-- ROW 1  -->
+                <!-- COLUMN 1  -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_non_teachingstaff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/homepagemenu"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="@dimen/padding_3"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_20"
+                        >
+
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/NonStaff"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/textLargeSize"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/montserrat"
+                            />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_right_arrow"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:includeFontPadding="false"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Institute-Management"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textLargeSize"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_class"
+                >
+                <!-- ROW 1  -->
+                <!-- COLUMN 1  -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/homepagemenu"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="@dimen/padding_3"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_20"
+                        >
+
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/Class"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/textLargeSize"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/montserrat"
+                            />
+
+                        <ImageView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_right_arrow"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_subject"
+                >
+                <!-- ROW 1  -->
+                <!-- COLUMN 1  -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/homepagemenu"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="@dimen/padding_3"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_20">
+
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/Subject"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/textLargeSize"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/montserrat"
+                            />
+
+                        <ImageView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_right_arrow"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_assignSubject"
+                >
+                <!-- ROW 1  -->
+                <!-- COLUMN 1  -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_assignSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/homepagemenu"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="@dimen/padding_3"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_20">
+
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/assignSubject"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/textLargeSize"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/montserrat"
+                            />
+
+                        <ImageView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_right_arrow"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_assignTeacher"
+                android:paddingBottom="80dp"
+
+                >
+                <!-- ROW 1  -->
+                <!-- COLUMN 1  -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_assignTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/homepagemenu"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="@dimen/padding_3"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_20">
+
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/assignTeacher"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/textLargeSize"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/montserrat" />
+
+                        <ImageView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_right_arrow"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_fee_mgmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:includeFontPadding="false"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/feesmgmt"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textLargeSize"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_fees"
+                android:layout_marginBottom="70dp"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/homepagemenu"
+                    android:layout_marginBottom="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="@dimen/padding_3">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/padding_20">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/feesdiscountmgmt"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/textLargeSize"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/montserrat"
+                            />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_right_arrow"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

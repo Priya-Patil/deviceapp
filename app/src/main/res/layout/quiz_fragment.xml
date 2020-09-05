@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/exam_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_marks"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:background="@color/colorShade1">
+
+            <TextView
+                android:id="@+id/txt_marking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1.0     -0.25"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorShade1"
+                android:paddingTop="@dimen/padding_10"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:id="@+id/txt_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Instructions   "
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorShade1"
+                android:paddingTop="@dimen/padding_10"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_downarrow"
+                />
+
+
+            <TextView
+                android:id="@+id/txt_hide_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide Instructions   "
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorShade1"
+                android:paddingTop="@dimen/padding_10"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_up_arrow"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_text_instruction"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:background="@color/colorShade1"
+            android:layout_below="@+id/rl_marks"
+            android:visibility="gone">
+
+            <WebView
+                android:id="@+id/txt_instructions_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Instructions   "
+                android:textSize="@dimen/question_text_size"
+                android:background="@color/colorShade1"
+                android:paddingTop="@dimen/padding_10"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_image_instruction"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:background="@color/colorShade1"
+            android:layout_below="@+id/rl_text_instruction"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/grey_40"
+                android:paddingTop="@dimen/padding_10"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"/>
+
+        </RelativeLayout>
+        <!--<TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textSize="12sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:background="@color/colorShade1"
+            android:padding="@dimen/padding_10"
+            android:layout_below="@+id/rl_marks"
+            android:textColor="@color/colorText"/>-->
+
+       <!-- <org.sufficientlysecure.htmltextview.HtmlTextView
+            android:text="Question text"
+            android:background="@color/colorShade1"
+            android:padding="@dimen/padding_10"
+            android:layout_below="@+id/rl_image_instruction"
+            android:textColor="@color/colorText"
+            android:textSize="15dp"
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium" />-->
+
+        <TextView
+            android:layout_below="@+id/rl_image_instruction"
+            android:id="@+id/qnumber"
+            android:text="QUestion:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <WebView
+            android:padding="@dimen/padding_10"
+            android:layout_below="@+id/qnumber"
+            android:background="@color/colorShade1"
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:background="@color/grey_10">
+
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorShade1"
+                android:padding="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_left_a"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundedbutton"
+                    android:text="A"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                    />
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_right_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/question_text_size"
+                    android:text="Which asian country has signed a deal with Russia for the supply of uranium for its 2400 MW Roopur Power Plant"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:background="@color/colorShade1"
+                android:layout_marginTop="2dp"
+                android:padding="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_left_b"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundedbutton"
+                    android:text="B"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_right_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/question_text_size"
+                    android:text="Check option"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorText">
+
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout2"
+                android:background="@color/colorShade1"
+                android:layout_marginTop="2dp"
+                android:padding="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_left_c"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundedbutton"
+                    android:text="C"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_right_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/question_text_size"
+                    android:text="11111"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorText"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorShade1"
+                android:layout_below="@+id/layout3"
+                android:layout_marginTop="2dp"
+                android:padding="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_left_d"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundedbutton"
+                    android:text="D"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_right_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/question_text_size"
+                    android:text="11111"
+                    android:textColor="@color/colorText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorShade1"
+                android:layout_below="@+id/layout4"
+                android:layout_marginTop="2dp"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/btn_left_e"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundedbutton"
+                    android:text="E"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_right_e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/question_text_size"
+                    android:text="11111"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorText"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
+

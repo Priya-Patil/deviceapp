@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:elevation="8dp"
+    android:background="@color/white"
+    >
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_instalment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rms99887382787"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSmallSize"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ankita Long Nammmmmmmmmmm "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSmallSize"
+                android:layout_below="@+id/tv_instalment"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="course"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSmallSize"
+                android:layout_below="@+id/tv_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_collectedTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collectedBy"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSmallSize"
+                android:layout_below="@+id/tv_course"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_collectedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSmallSize"
+                android:layout_below="@+id/tv_course"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_collectedTxt"
+                android:textStyle="bold" />
+
+
+         <!--   <TextView
+                android:id="@+id/tv_payment_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSmallSize"
+                android:layout_below="@+id/tv_course"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_collectedBy"
+                android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/tv_amountPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rs"
+                android:text="200000000"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_blue"
+                android:textSize="@dimen/textSmallSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_payment_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSmallSize"
+                android:layout_below="@+id/tv_amountPaid"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_paidDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20/01/2020"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textSmallSize"
+                android:layout_below="@+id/tv_course"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

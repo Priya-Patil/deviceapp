@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--region Time TAble-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+
+        <!--region Period-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+
+            <!--region Period-->
+            <TextView
+                android:id="@+id/tv_inc_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontStyle5"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0.60dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                tools:ignore="Suspicious0dp">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="9.45 AM-10.15 AM"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontStyle5"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0.60dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                tools:ignore="Suspicious0dp">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_sub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="1st-(B)-MATH"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontStyle5"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0.60dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                tools:ignore="Suspicious0dp">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_teacher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Teacher"
+                android:textAlignment="center"
+                android:textSize="@dimen/fontStyle5"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0.60dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                tools:ignore="Suspicious0dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_delete_black_24dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_edit_black_24dp"
+                android:backgroundTint="@color/colorBlack"
+                android:layout_marginLeft="3dp"
+                />
+
+            </LinearLayout>
+            <!--endregion Period-->
+
+
+        </LinearLayout>
+
+        <!--endregion Period-->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.60dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <!--endregion Time TAble-->
+
+
+
+</LinearLayout>

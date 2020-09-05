@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout1"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="70dp">
+
+                <!--region Slider Region-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginTop="@dimen/padding_10">
+
+                    <LinearLayout
+                        android:id="@+id/sliderlayout"
+                        android:background="@color/colorGrey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.daimajia.slider.library.SliderLayout
+                            android:id="@+id/slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp" />
+
+                        <com.daimajia.slider.library.Indicators.PagerIndicator
+                            android:id="@+id/custom_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--endregion-->
+
+                <RelativeLayout
+                    android:id="@+id/mainGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_10">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layout2"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="2">
+                        <!-- ROW 1  -->
+                        <!-- COLUMN 1  -->
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_test"
+                            android:layout_width="@dimen/homepagemenu"
+                            android:layout_height="@dimen/hgthomepagemenu"
+                            android:layout_margin="@dimen/padding_10"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/colorPrimary">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@color/colorTest">
+
+                                <ImageView
+                                    android:id="@+id/iv_backprofile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_test"
+                                    android:backgroundTint="@color/colorWhite"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:paddingTop="5dp"
+                                    android:text="Test"
+                                    android:gravity="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:id="@+id/name"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- COLUMN 2  -->
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_video"
+                            android:layout_width="@dimen/homepagemenu"
+                            android:layout_height="@dimen/hgthomepagemenu"
+                            android:layout_margin="@dimen/padding_10"
+                            app:cardBackgroundColor="@color/colorPrimary"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:background="@color/colorVideo">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_video"
+                                    android:backgroundTint="@color/colorWhite"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:paddingTop="5dp"
+                                    android:text="Video"
+                                    android:gravity="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:id="@+id/name1"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- ROW 2  -->
+                    <!-- COLUMN 1  -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layout3"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_below="@+id/layout2"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_startMeeting"
+                            android:layout_width="@dimen/homepagemenu"
+                            android:layout_height="@dimen/hgthomepagemenu"
+                            android:layout_margin="@dimen/padding_10"
+                            app:cardBackgroundColor="@color/colorPrimary"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/layout_class7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:background="@color/colorMeet">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_class"
+                                    android:backgroundTint="@color/colorWhite"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:paddingTop="5dp"
+                                    android:text="LIVE CLASS"
+                                    android:gravity="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:id="@+id/name"/>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- COLUMN 2  -->
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_aboutus"
+                            android:layout_width="@dimen/homepagemenu"
+                            android:layout_height="@dimen/hgthomepagemenu"
+                            android:layout_margin="@dimen/padding_10"
+                            app:cardBackgroundColor="@color/colorPrimary"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/layout_class8"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:background="@color/colorAbout">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_group"
+                                    android:backgroundTint="@color/colorWhite" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:paddingTop="5dp"
+                                    android:text="About US"
+                                    android:gravity="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

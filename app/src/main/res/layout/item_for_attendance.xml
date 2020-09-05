@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+       >
+
+        <TextView
+            android:id="@+id/tv_rollno"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Roll No"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textMediumSize"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textMediumSize"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_rollno"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/iv_present"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/ic_circle_grey"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/textSmallSize"
+                android:textStyle="normal"
+                android:text="P"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/iv_abesntexcuse"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/ic_circle_grey"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/textSmallSize"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:text="A"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10" />
+
+            <TextView
+                android:id="@+id/iv_late"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/ic_circle_grey"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/textSmallSize"
+                android:textStyle="normal"
+                android:text="L"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+
+        <!---->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_20"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10">
+    </View>
+</LinearLayout>

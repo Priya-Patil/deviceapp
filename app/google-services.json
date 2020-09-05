@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "39015430850",
+    "firebase_url": "https://educationplus-c72b2.firebaseio.com",
+    "project_id": "educationplus-c72b2",
+    "storage_bucket": "educationplus-c72b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39015430850:android:c065399850f9f60cb6195b",
+        "android_client_info": {
+          "package_name": "com.teammandroid.sarvodaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39015430850-30fvuu25d1b0bt9ioqb4htlqohd9k9j7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtiIJqB6NZ1pQ1un8SbvWkHm71_dcA5BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39015430850-30fvuu25d1b0bt9ioqb4htlqohd9k9j7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

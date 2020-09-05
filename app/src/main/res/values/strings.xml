@@ -1,0 +1,291 @@
+<resources>
+    <string name="app_name">CBROZ</string>
+
+    <string-array name="classn">
+        <item>Select Class</item>
+        <item>7</item>
+        <item>4</item>
+        <item>3</item>
+        <item>Jr.Kg.</item>
+    </string-array>
+
+    <string-array name="board">
+        <item>Select Board</item>
+
+    </string-array>
+
+    <string name="homepage">Home Page</string>
+    <string name="select_Board">Select Board</string>
+
+    <string name="home">Home</string>
+    <string name="setup">Setup</string>
+    <string name="reports">Reports</string>
+    <string name="profile">Profile</string>
+
+    <string name="text_parent">Parent</string>
+
+    <string name="chooseyourcourse">Choose Your Course right away</string>
+
+    <string name="search">search for your homework,test etc...</string>
+
+    <string name="text_school_name">School Name</string>
+    <string name="fullname">Fullname</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+    <string name="mobile">Mobile No.</string>
+    <string name="email">Email</string>
+    <string name="profilepic">profilepic</string>
+    <string name="subjectnm">Subject Name</string>
+    <string name="boardnm">Board Name</string>
+    <string name="classnm">Class Name</string>
+
+    <string name="batchnm">Batch Name</string>
+    <string name="fromtime">From Time</string>
+    <string name="totime">To Time</string>
+    <string name="discount">Discount</string>
+    <string name="amount">Amount</string>
+    <string name="amt">10000</string>
+    <string name="discountinpercent">Discount (in %)</string>
+
+    <string name="homework">Homework</string>
+    <string name="test">Test</string>
+    <string name="attendance">Attendance</string>
+    <string name="timetable">Timetable</string>
+    <string name="fees">Fees</string>
+    <string name="communication">Contact</string>
+    <string name="Student">Student Management</string>
+    <string name="Staff">Teaching Staff \nManagement</string>
+    <string name="NonStaff">Non Teaching Staff \nManagement</string>
+    <string name="Subject">Subject Management</string>
+    <string name="assignSubject">Assign Subject</string>
+    <string name="assignTeacher">Assign Teacher</string>
+    <string name="Class">Class Management</string>
+    <string name="usern">Loading ...</string>
+
+    <string name="contact">Contact No.</string>
+    <string name="location">Your Location</string>
+    <string name="setting">Setting</string>
+    <string name="aboutus">About Us</string>
+    <string name="logout">Logout</string>
+    <string name="time_from">Time From :</string>
+    <string name="time_to">Time To :</string>
+    <string name="teachername">Teacher Name :</string>
+
+    <string name="loading_message">Please wait... </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="feesInstruction">If you want your parents and student to pay fees and other payments using application, please contact us at example@gmail.com or +919876543210</string>
+    <string name="studentFirstName">First Name</string>
+    <string name="studentLastName">Last Name</string>
+    <string name="continuee">Go to Fees</string>
+    <string name="total_amount">Total Fee</string>
+    <string name="paid_amount">Pay Amount</string>
+
+    <string name="remAmount">Remaining Amount</string>
+    <string name="next">Next</string>
+    <string name="paid_success">Submission Successfully</string>
+    <string name="done">Done</string>
+
+    <string name="classs">Class</string>
+    <string name="date">Date</string>
+    <string name="editinfo">Modify Details</string>
+    <string name="dt">27 / 12 / 2019</string>
+    <string name="hist">History</string>
+    <string name="selectclass">Select a Class</string>
+    <string name="selectcategory">Select a Category</string>
+    <string name="selectteacher">Select a Teacher</string>
+    <string name="selectsubject">Select a Subject</string>
+    <string name="selectrole">Select a Role</string>
+    <string name="classteacher">Class Teacher</string>
+    <string name="subjectteacher">Subject Teacher</string>
+
+
+    <string name="addstud">Add Student</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="enrolno">Enrollment No.</string>
+    <string name="parentmobno">Parent Mobile No.</string>
+    <string name="rollno">Roll No. (Optional)</string>
+    <string name="rollnos">Roll No.</string>
+    <string name="noticetype">Notice Type</string>
+
+
+    <string name="Today">Today (28/12/2019)</string>
+    <string name="thisWeek">This Week</string>
+    <string name="thisMonth">This Month</string>
+    <string name="thisYear">This AY 19-20</string>
+    <string name="studentAdmissions">Student Admisssions</string>
+    <string name="feesCollection">Fees Collections</string>
+    <string name="feesStats">Fees Status</string>
+    <string name="postDue">Total\namount</string>
+    <string name="futureDues">Remaining\namount</string>
+    <string name="expense">Expense\namount</string>
+    <string name="totalCollected">Total\nAdmission</string>
+    <string name="dash">-</string>
+    <string name="totalCollection">Total Collection</string>
+    <string name="cash">Cash</string>
+    <string name="other">Other</string>
+    <string name="Online">Online</string>
+    <string name="chaque">Chaque</string>
+    <string name="searchStudent">Search by Student / Contatct No</string>
+    <string name="name">Name</string>
+    <string name="studentId">Student Id</string>
+    <string name="course">Course</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="instalmentNo">Transaction No.</string>
+    <string name="collectedBy">Admitted By</string>
+    <string name="paid_date">Paid Date</string>
+    <string name="amountPaid">Amount Paid</string>
+
+    <string name="zero">0</string>
+    <string name="deletestud">Delete Student</string>
+
+    <string name="enquiry">Enquiry Details</string>
+    <string name="youtubevideos">Videos</string>
+    <string name="expenses">Expense Details</string>
+    <string name="feescollection">Fees Collection</string>
+    <string name="noavailable">No Available</string>
+    <string name="nonteaching">Non Teaching</string>
+    <string name="parentname">Parent Name</string>
+    <string name="address">Address</string>
+    <string name="title">Enquiry Title</string>
+
+
+    <string name="exptitle">Expense Title</string>
+    <string name="expcategory">Expense Category</string>
+    <string name="category">Category</string>
+
+    <string name="paidBy">Paid By</string>
+    <string name="paid">Paid</string>
+    <string name="from">From :</string>
+    <string name="to">To :</string>
+    <string name="share">Share</string>
+    <string name="exportReceipt">Export receipt</string>
+    <string name="enquiryclass">Enquiry class</string>
+
+
+    <string-array name="payment_mode">
+        <item>Cash</item>
+        <item>Check</item>
+        <item>Online</item>
+    </string-array>
+
+    <string name="feesmgmt">Fees-Management</string>
+    <string name="feesdiscountmgmt">Fees Discount Management</string>
+    <string-array name="discount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>Jr.Kg.</item>
+    </string-array>
+
+
+    <string-array name="day">
+        <item>Select Day</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednsday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string name="a_discount">- Discount</string>
+    <string name="discount_amount">- Discount Amount</string>
+    <string name="remaining_amount">Remaining Amount</string>
+    <string name="payment_transactions">Payment Transactions :</string>
+    <string name="a_paid_amount">- Amount Paid</string>
+    <string name="text_dialog">Data not Available !!</string>
+
+
+    <string name="text_for_delete_timetable">Are you sure, you want to delete this?
+        </string>
+
+    <string name="txt_wishes">Good Morning</string>
+    <string name="txt_uname">Priya Pala..</string>
+    <string name="txt_exam_instructions">
+             1. You have <b> 7 </b> minutes to complete the test.\n
+            2. The test contains a total of 15 questions for <b> 15 </b> Marks.\n
+            3. There is only one correct answer to each question. Click on the most appropriate option to mark it as your answer.\n
+            4. There is <b> 1/4 </b> penalty for each wrong answer.\n
+            5. You can change your answer by clicking on some other option.\n
+            6. You can unmark your answer by clicking on the <b> “Clear Response” </b> button.\n
+            7. A Number list of all questions appears at the right-hand side of the screen. You can access the questions in any order within a section or across sections by clicking on the question number given on the number list.\n
+            8. You can use rough sheets while taking the test. Do not use calculators, log tables, dictionaries, or any other printed/online reference material during the test.\n
+            9. Do not click the button <b> “Submit test” </b> before completing the test. A test once submitted cannot be resumed.\n
+</string>
+
+    <string name="txt_start_exam_title">Please read the following instructions very carefully</string>
+
+    <string name="txt_instructions">Instructions</string>
+    <string name="txt_exam_title">The Hindu Quiz: 07-08-2019</string>
+    <string name="Scored">Scored</string>
+    <string name="Rank"> Rank</string>
+    <string name="TimeSpent">TimeSpent</string>
+    <string name="Unattempted">Unattempted</string>
+    <string name="CurrectQue">Correct</string>
+    <string name="WrongQue">Wrong</string>
+    <string name="title_grt">Great Performance !</string>
+    <string name="sub_title">Compete with your friends to know where you stand amongst them</string>
+    <string name="ReattempButton">Reattempt Quiz</string>
+    <string name="submit_text">Are you sure, you want to submit this test? You cant edit once you submit</string>
+    <string name="time_out_text">Timeout</string>
+
+    <dimen name="txtquiz">12sp</dimen>
+
+    <string name="text_title">Title</string>
+
+    <string name="contact_us_details"><b>Why Sarvodaya International School ?  </b>\n
+\t\t\tSarvodaya International School is an institution for learning that seeks to provide education of the optimum standard. Choosing the right school for your child is probably one of the most important decisions you will make. We believe that learning is a lifelong process. Our teachers are trained in a work culture that fosters diligence, sincerity and accountability in which our students would develop a passion for learning and thinking out of the box that will serve them throughout and beyond school days.\n\n
+        <b>Vision </b>\n
+\t\t\tTo emerge as the most preferred educational institution of excellence imparting value-based quality education to meet the global challenges of the changing world and serving the purpose of nurturing young minds through education.\n\n
+
+<b>Mission</b>\n
+\t\t\tSarvodaya International School aims to provide an all-round education nurturing excellence for knowledge society by developing lifelong learning skills through traditional values of love, respect and discipline. We are committed..\n
+1. To enable the students to achieve their dreams in the form of dynamic global leaders with confidence.\n
+2. To equip the nation and humanity at large with intellectually and emotionally able Individuals through innovative teaching practices.\n
+3. To provide academic excellence to have a wonderful career prospects.\n
+4. To widen the intellectual horizon through global exposure in arts, science and curricular activities.\n
+5. To develop environment friendly and state of the art infrastructure that promotes a conductive ambience promoting fun and creativity in learning.\n
+    </string>
+    <string name="contact_us_address">  Sarvodaya Campus, \n Warud MIDC Road , Warud kazi ,\n
+Aurangabad.\n </string>
+
+    <string name="Total">Total Amount</string>
+    <string name="Received">Received Amount</string>
+    <string name="Remaining">Remaining Amount</string>
+    <string name="Expense">Expense Amount</string>
+
+    <!--new-->
+    <string name="Add">Add</string>
+    <string name="History">History</string>
+    <string name="Setting">Setting</string>
+    <string name="Stop">Stop</string>
+    <string name="Start">Start</string>
+    <string name="Send">Feeder</string>
+    <string name="Bluetooth">Bluetooth</string>
+
+    <string name="Title">Title</string>
+    <string name="Internal_diameter">Internal Diameter</string>
+    <string name="Number_of_terms">Number Of Turns</string>
+    <string name="Wire_diameter">Wire Diameter</string>
+    <string name="Start_wait_time">Start Time</string>
+    <string name="Stop_wait_time">Cutting Time</string>
+    <string name="Feed_speed">Machine Speed</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Select_setting">Setting</string>
+    <!--<string name="Select_setting">Select Setting</string>-->
+    <string name="Save_setting">Save Setting</string>
+    <string name="Repeat_Mode">Repeat</string>
+   <!-- <string name="Repeat_Mode">Repeat Mode</string>-->
+    <string name="Die_Diameter">Die Diameter</string>
+    <string name="btn_New_Save_setting">Save New Setting</string>
+
+    <string name="rate_us_link">https://play.google.com/store/apps/details?id=com.teammandroid.sarvodaya</string>
+
+</resources>
